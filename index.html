@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile - Muhammad Abdul Malik</title>
+    <style>
+        /* Reset dasar */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Pengaturan tema terang dan font */
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Pembungkus konten (tanpa kotak luar/border) */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* --- BAGIAN ATAS: Foto, Info, Kategori --- */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h1 {
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            color: #111111;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            color: #555555;
+        }
+
+        .profile-info a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .profile-info a:hover {
+            text-decoration: underline;
+        }
+
+        .categories {
+            min-width: 180px;
+        }
+
+        .categories h3 {
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 8px;
+            color: #111111;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories li {
+            margin-bottom: 8px;
+            color: #555555;
+        }
+
+        .categories li::before {
+            content: "• ";
+            color: #b33900;
+            font-weight: bold;
+        }
+
+        /* --- BAGIAN TENGAH: Paragraf --- */
+        .content-section {
+            margin-bottom: 50px;
+        }
+
+        .content-section p {
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #444444;
+        }
+
+        /* --- BAGIAN BAWAH: Multimedia & Lampiran --- */
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .video-container video {
+            width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .photo-grid img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .attachments {
+            min-width: 220px;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fcfcfc;
+        }
+
+        .attachments h3 {
+            margin-top: 0;
+            font-size: 15px;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+            color: #333333;
+        }
+
+        .attachments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .attachments li {
+            margin-bottom: 12px;
+        }
+
+        .attachments a {
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .attachments a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- BAGIAN ATAS: Foto, Biodata, Kategori -->
+        <div class="header-section">
+            <img src="gambar/gambarmalik01.jpeg" alt="Foto Profil" class="profile-photo">
+            
+            <div class="profile-info">
+                <h1>Muhammad Abdul Malik</h1>
+                <p>NIM : 0110226175<br>Bogor, Cibinong, Jawa Barat<br>Desain Grafis</p>
+                <br>
+                <p>Email: <a href="mailto:malikmale12345@gmail.com">malikmale12345@gmail.com</a></p>
+                <p>Telephone: 0812345678910</p>
+            </div>
+            
+            <div class="categories">
+                <h3>Keahlian</h3>
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>Desain Grafis</li>
+                    <li>Video Editing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bagian deskripsi singkat diri sendiri-->
+        <div class="content-section">
+            <p>
+                Saya adalah Muhammad Abdul Malik, seorang desainer yang memiliki ketertarikan besar pada bidang desain visual dan kreativitas. Saya memiliki kemampuan dalam mengembangkan ide menjadi sebuah karya visual yang menarik, komunikatif, dan memiliki tujuan yang jelas. Bagi saya, desain bukan hanya tentang membuat sesuatu terlihat bagus, tetapi juga bagaimana sebuah karya dapat menyampaikan pesan dengan efektif.
+            </p>
+            <p>
+Saya senang mempelajari hal-hal baru dalam dunia desain dan terus berusaha meningkatkan kemampuan serta pengalaman saya. Dengan menggabungkan kreativitas, ketelitian, dan kemauan untuk terus belajar, saya ingin menghasilkan karya desain yang dapat memberikan nilai dan memenuhi kebutuhan setiap proyek yang saya kerjakan.            </p>
+        </div>
+
+        <!-- BAGIAN BAWAH: Multimedia & Attachments -->
+        <div class="bottom-section">
+            
+            <!-- Video -->
+            <div class="video-container">
+                <video controls>
+                    <source src="video/videomalik1.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
+
+            <!-- Grid Foto -->
+            <div class="photo-grid">
+                <img src="gambar/gambar2.jpeg" alt="Galeri 1">
+                <img src="gambar/gambar3.jpeg" alt="Galeri 2">
+                <img src="gambar/gambar4.jpeg" alt="Galeri 3">
+                <img src="gambar/gambar5.jpeg" alt="Galeri 4">
+            </div>
+
+            <!-- Attachments -->
+            <div class="attachments">
+                <h3>Attachments</h3>
+                <ul>
+                    <li><a href="#">📄 cv.pdf</a></li>
+                    <li><a href="#">📄 Portofolio.pdf</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
